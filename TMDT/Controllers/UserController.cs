@@ -21,5 +21,9 @@ namespace TMDT.Controllers
         {
             return View();
         }
+        public ActionResult ForgotPass()
+        {
+            return View();
+        }
     }
 }

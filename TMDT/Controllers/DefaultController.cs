@@ -45,5 +45,13 @@ namespace TMDT.Controllers
         {
             return View();
         }
+        public ActionResult Compare()
+        {
+            return View();
+        }
+        public ActionResult Wishlish()
+        {
+            return View();
+        }
     }
 }

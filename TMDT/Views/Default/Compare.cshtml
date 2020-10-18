@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Login";
+    ViewBag.Title = "Compare";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -246,58 +246,135 @@
         <div class="breadcrumb">
             <ul class="d-flex align-items-center">
                 <li><a href="index.html">Home</a></li>
-                <li>@Html.ActionLink("Account", "Register", "User")</li>
-                <li class="active"><a href="contact.html">contact us</a></li>
+                <li class="active"><a href="compare.html">Compare Product</a></li>
             </ul>
         </div>
     </div>
     <!-- Container End -->
 </div>
 <!-- Breadcrumb End -->
-<!-- LogIn Page Start -->
-<div class="log-in ptb-100 ptb-sm-60">
+<!-- Compare Page Start -->
+<div class="compare-product ptb-100 ptb-sm-60">
     <div class="container">
-        <div class="row">
-            <!-- New Customer Start -->
-            <div class="col-md-6">
-                <div class="well mb-sm-30">
-                    <div class="new-customer">
-                        <h3 class="custom-title">new customer</h3>
-                        <p class="mtb-10"><strong>Register</strong></p>
-                        <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made</p>
-                        <a class="customer-btn" href="@Url.Action("Register","User")">continue</a>
-                    </div>
-                </div>
-            </div>
-            <!-- New Customer End -->
-            <!-- Returning Customer Start -->
-            <div class="col-md-6">
-                <div class="well">
-                    <div class="return-customer">
-                        <h3 class="mb-10 custom-title">returnng customer</h3>
-                        <p class="mb-10"><strong>I am a returning customer</strong></p>
-                        <form action="#">
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="text" name="email" placeholder="Enter your email address..." id="input-email" class="form-control">
+        <div class="table-responsive-sm">
+            <table class="table text-center compare-content">
+                <tbody>
+                    <tr>
+                        <td class="product-title">Product</td>
+                        <td class="product-description">
+                            <div class="compare-details">
+                                <div class="compare-detail-img">
+                                    <a href="#"><img src="~/Content/img\products\20.jpg" alt="compare-product"></a>
+                                </div>
+                                <div class="compare-detail-content">
+                                    <span>Camera</span>
+                                    <h4><a href="product.html">Concord Fabric Single</a></h4>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="text" name="pass" placeholder="Password" id="input-password" class="form-control">
+                        </td>
+                        <td class="product-description">
+                            <div class="compare-details">
+                                <div class="compare-detail-img">
+                                    <a href="#"><img src="~/Content/img\products\21.jpg" alt="compare-product"></a>
+                                </div>
+                                <span>mobile</span>
+                                <h4><a href="product.html">Tablat c7 pro</a></h4>
                             </div>
-                            <p class="lost-password"><a href="@Url.Action("ForgotPass","User")">Forgot password?</a></p>
-                            <input type="submit" value="Login" class="return-customer-btn">
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- Returning Customer End -->
+                        </td>
+                        <td class="product-description">
+                            <div class="compare-details">
+                                <div class="compare-detail-img">
+                                    <a href="#"><img src="~/Content/img\products\35.jpg" alt="compare-product"></a>
+                                </div>
+                                <span>Games</span>
+                                <h4><a href="product.html">play station x 22</a></h4>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Description</td>
+                        <td class="product-description">
+                            <p>Impressively thin and light, the HP EliteBook 840 empowers users to create, connect, and collaborate, using enterprise-class performance</p>
+                        </td>
+                        <td class="product-description">
+                            <p>Impressively thin and light, the HP EliteBook 840 empowers users to create, connect, and collaborate, using enterprise-class performance</p>
+                        </td>
+                        <td class="product-description">
+                            <p>Impressively thin and light, the HP EliteBook 840 empowers users to create, connect, and collaborate, using enterprise-class performance</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Price</td>
+                        <td class="product-description">$235</td>
+                        <td class="product-description">$275</td>
+                        <td class="product-description">$190</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Color</td>
+                        <td class="product-description">Black</td>
+                        <td class="product-description">Yellow</td>
+                        <td class="product-description">White</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Stock</td>
+                        <td class="product-description">In Stock</td>
+                        <td class="product-description">Stock Out</td>
+                        <td class="product-description">In Stock</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Add to cart</td>
+                        <td class="product-description">
+                            <a class="compare-cart text-uppercase" href="@Url.Action("Cart","Default")"> + add to cart</a>
+                        </td>
+                        <td class="product-description">
+                            <a class="compare-cart text-uppercase" href="@Url.Action("Cart","Default")"> + add to cart</a>
+                        </td>
+                        <td class="product-description">
+                            <a class="compare-cart text-uppercase" href="@Url.Action("Cart","Default")"> + add to cart</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Delete</td>
+                        <td class="product-description"><i class="fa fa-trash-o"></i></td>
+                        <td class="product-description"><i class="fa fa-trash-o"></i></td>
+                        <td class="product-description"><i class="fa fa-trash-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Rating</td>
+                        <td class="product-description">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </td>
+                        <td class="product-description">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </td>
+                        <td class="product-description">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <!-- Row End -->
     </div>
-    <!-- Container End -->
 </div>
-<!-- LogIn Page End -->
+<!-- Compare Page End -->
 <!-- Support Area Start Here -->
 <div class="support-area bdr-top">
     <div class="container">
@@ -351,5 +428,4 @@
     </div>
     <!-- Container End -->
 </div>
-<!-- Support Area End Here -->
 

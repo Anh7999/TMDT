@@ -72,8 +72,8 @@ C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\System.Web.WebP
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\Newtonsoft.Json.xml
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\Antlr3.Runtime.pdb
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.csprojAssemblyReference.cache
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.csproj.CoreCompileInputs.cache
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.csproj.CopyComplete
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.dll
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.pdb
+C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.csprojAssemblyReference.cache
