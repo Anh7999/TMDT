@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="88e0dda8ddaa45699dc18da7c2000392" Name="Diagram1">
+        <EntityTypeShape EntityType="TMDTDAModel.Account" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.ChiTietGioHang" Width="1.5" PointX="11.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.ChiTietThanhToan" Width="1.5" PointX="8.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.DonDatHang" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.DonHangVanChuyen" Width="1.5" PointX="10.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.Gia" Width="1.5" PointX="3.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.GioHang" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.KhuyenMai" Width="1.5" PointX="3.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.LoaiSanPham" Width="1.5" PointX="3.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.NhaCungCap" Width="1.5" PointX="3.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.SanPham" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDAModel.ThanhToan" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="TMDTDAModel.FK__DonDatHang__Sdt__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__SanPham__Sdt__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__ChiTietGi__IdGio__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__ChiTietGioHang__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__ChiTietTha__IdTT__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__ChiTietThanhToan__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__DonHangVanChuyen__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__DonDatHan__IdGio__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__SanPham__IdMucgi__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__SanPham__IdKM__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__SanPham__IdLoaiS__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDAModel.FK__SanPham__IdNCC__403A8C7D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿
+using System.Web.Mvc;
 
 namespace TMDT.Areas.Admin
 {
@@ -17,7 +18,7 @@ namespace TMDT.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { action = "Default", id = UrlParameter.Optional }
             );
         }
     }

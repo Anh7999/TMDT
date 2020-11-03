@@ -77,3 +77,7 @@ C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.cspr
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.dll
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.pdb
 C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\obj\Debug\TMDT.csprojAssemblyReference.cache
+C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\EntityFramework.dll
+C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\EntityFramework.SqlServer.dll
+C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\EntityFramework.xml
+C:\Users\trung\Desktop\Thương Mại Điện Tử\TMDT\TMDT\bin\EntityFramework.SqlServer.xml
