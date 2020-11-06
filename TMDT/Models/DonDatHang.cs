@@ -17,17 +17,18 @@ namespace TMDT.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DonDatHang()
         {
+            this.CHITIETDONDATHANGs = new HashSet<CHITIETDONDATHANG>();
             this.ChiTietThanhToans = new HashSet<ChiTietThanhToan>();
         }
     
         public int IdDHH { get; set; }
         public Nullable<System.DateTime> NgayDH { get; set; }
         public int Sdt { get; set; }
-        public int IdGioHang { get; set; }
     
         public virtual Account Account { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CHITIETDONDATHANG> CHITIETDONDATHANGs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietThanhToan> ChiTietThanhToans { get; set; }
-        public virtual GioHang GioHang { get; set; }
     }
 }

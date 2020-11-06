@@ -130,67 +130,57 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
-    <Compile Include="Areas\Admin\Controllers\GiasController.cs" />
-    <Compile Include="Areas\Admin\Controllers\KhuyenMaisController.cs" />
-    <Compile Include="Areas\Admin\Controllers\LoaiSanPhamsController.cs" />
-    <Compile Include="Areas\Admin\Controllers\NhaCungCapsController.cs" />
-    <Compile Include="Areas\Admin\Controllers\SanPhamsController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ChiTietGioHang.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+    <Compile Include="Models\CHITIETDONDATHANG.cs">
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ChiTietThanhToan.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonDatHang.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonHangVanChuyen.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Gia.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GioHang.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KhuyenMai.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoaiSanPham.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NhaCungCap.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SanPham.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ThanhToan.cs">
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TMDT.Context.cs">
+    <Compile Include="Models\TMDTDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TMDT.Context.tt</DependentUpon>
+      <DependentUpon>TMDTDB.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TMDT.cs">
+    <Compile Include="Models\TMDTDB.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TMDT.tt</DependentUpon>
+      <DependentUpon>TMDTDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TMDT.Designer.cs">
+    <Compile Include="Models\TMDTDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TMDT.edmx</DependentUpon>
+      <DependentUpon>TMDTDB.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -3423,6 +3413,13 @@
     <Content Include="Content\img\icon\bg-l-sale.png" />
     <Content Include="Content\img\icon\social-img1.png" />
     <Content Include="Content\img\icon\social-img2.png" />
+    <Content Include="Content\img\team\1.jpg" />
+    <Content Include="Content\img\team\2.jpg" />
+    <Content Include="Content\img\team\3.jpg" />
+    <Content Include="Content\img\team\4.jpg" />
+    <Content Include="Content\img\team\5.jpg" />
+    <Content Include="Content\img\team\6.jpg" />
+    <Content Include="Content\img\vertical-menu\images.png" />
     <Content Include="Content\img\logo\logo.png" />
     <Content Include="Content\img\logo\logo2.png" />
     <Content Include="Content\img\payment\1.png" />
@@ -3477,10 +3474,6 @@
     <Content Include="Content\img\slider\6.jpg" />
     <Content Include="Content\img\slider\7.jpg" />
     <Content Include="Content\img\slider\8.jpg" />
-    <Content Include="Content\img\team\1.jpg" />
-    <Content Include="Content\img\team\2.jpg" />
-    <Content Include="Content\img\team\3.jpg" />
-    <Content Include="Content\img\team\4.jpg" />
     <Content Include="Content\img\vertical-menu\1.png" />
     <Content Include="Content\img\vertical-menu\10.png" />
     <Content Include="Content\img\vertical-menu\11.png" />
@@ -3516,15 +3509,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\TMDT.Context.tt">
+    <Content Include="Models\TMDTDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TMDT.Context.cs</LastGenOutput>
-      <DependentUpon>TMDT.edmx</DependentUpon>
+      <DependentUpon>TMDTDB.edmx</DependentUpon>
+      <LastGenOutput>TMDTDB.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TMDT.tt">
+    <Content Include="Models\TMDTDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TMDT.edmx</DependentUpon>
-      <LastGenOutput>TMDT.cs</LastGenOutput>
+      <DependentUpon>TMDTDB.edmx</DependentUpon>
+      <LastGenOutput>TMDTDB.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -3545,13 +3538,6 @@
     <Content Include="Content\fonts\Linearicons-Free.ttf" />
     <Content Include="Content\fonts\Linearicons-Free.woff" />
     <Content Include="Content\fonts\Linearicons-Free.woff2" />
-    <EntityDeploy Include="Models\TMDT.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TMDT.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\TMDT.edmx.diagram">
-      <DependentUpon>TMDT.edmx</DependentUpon>
-    </Content>
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Conntent\scss\navs\_global.scss" />
@@ -3721,31 +3707,6 @@
     <Content Include="Areas\Admin\Conntent\vendor\jquery\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="Areas\Admin\Conntent\vendor\jquery\jquery.min.map" />
     <Content Include="Areas\Admin\Conntent\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="Areas\Admin\Views\SanPhams\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\SanPhams\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\SanPhams\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\SanPhams\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\SanPhams\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\LoaiSanPhams\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\LoaiSanPhams\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\LoaiSanPhams\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\LoaiSanPhams\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\LoaiSanPhams\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Gias\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Gias\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Gias\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Gias\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Gias\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\KhuyenMais\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\KhuyenMais\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\KhuyenMais\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\KhuyenMais\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\KhuyenMais\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\NhaCungCaps\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\NhaCungCaps\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\NhaCungCaps\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\NhaCungCaps\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\NhaCungCaps\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Default\Index.cshtml" />
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\less\brands.less" />
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\less\fontawesome.less" />
@@ -3796,6 +3757,13 @@
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <EntityDeploy Include="Models\TMDTDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TMDTDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\TMDTDB.edmx.diagram">
+      <DependentUpon>TMDTDB.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -3835,6 +3803,9 @@
     <Content Include="Views\User\ForgotPass.cshtml" />
     <Content Include="Views\Default\Compare.cshtml" />
     <Content Include="Views\Default\Wishlish.cshtml" />
+    <Content Include="Views\Default\Product1.cshtml" />
+    <Content Include="Views\Product\Product1.cshtml" />
+    <Content Include="Views\Default\Shopbycategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

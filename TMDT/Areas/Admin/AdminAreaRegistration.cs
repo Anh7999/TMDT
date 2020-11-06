@@ -18,7 +18,7 @@ namespace TMDT.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new { action = "Default", id = UrlParameter.Optional }
+                new { controller= "Default", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -14,16 +14,20 @@ namespace TMDT.Models
     
     public partial class DonHangVanChuyen
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DonHangVanChuyen()
+        {
+            this.ChiTietThanhToans = new HashSet<ChiTietThanhToan>();
+        }
+    
         public int ShippingID { get; set; }
         public Nullable<System.DateTime> NgayGiaoHang { get; set; }
         public Nullable<System.DateTime> NgayNhanHang { get; set; }
         public string TinhtrangDH { get; set; }
         public string PhuongthucVC { get; set; }
         public string PhiVC { get; set; }
-        public int IdDHH { get; set; }
-        public int IdTT { get; set; }
-        public int Sdt { get; set; }
     
-        public virtual ChiTietThanhToan ChiTietThanhToan { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ChiTietThanhToan> ChiTietThanhToans { get; set; }
     }
 }

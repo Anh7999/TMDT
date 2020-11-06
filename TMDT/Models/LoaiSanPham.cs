@@ -22,6 +22,8 @@ namespace TMDT.Models
     
         public int IdLoaiSP { get; set; }
         public string TenLoaiSP { get; set; }
+        public Nullable<bool> Hide { get; set; }
+        public Nullable<int> Order { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SanPham> SanPhams { get; set; }

@@ -17,22 +17,22 @@ namespace TMDT.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SanPham()
         {
-            this.ChiTietGioHangs = new HashSet<ChiTietGioHang>();
+            this.CHITIETDONDATHANGs = new HashSet<CHITIETDONDATHANG>();
         }
     
         public int IdSP { get; set; }
         public string TenSP { get; set; }
         public string MotaSP { get; set; }
+        public Nullable<int> DonGia { get; set; }
         public int IdNCC { get; set; }
         public int IdLoaiSP { get; set; }
-        public int IdMucgia { get; set; }
         public int IdKM { get; set; }
-        public int Sdt { get; set; }
+        public string Image { get; set; }
+        public Nullable<int> Order { get; set; }
+        public Nullable<bool> Hie { get; set; }
     
-        public virtual Account Account { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }
-        public virtual Gia Gia { get; set; }
+        public virtual ICollection<CHITIETDONDATHANG> CHITIETDONDATHANGs { get; set; }
         public virtual KhuyenMai KhuyenMai { get; set; }
         public virtual LoaiSanPham LoaiSanPham { get; set; }
         public virtual NhaCungCap NhaCungCap { get; set; }

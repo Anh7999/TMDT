@@ -12,17 +12,14 @@ namespace TMDT.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class ChiTietThanhToan
+    public partial class CHITIETDONDATHANG
     {
+        public int IdSP { get; set; }
         public int IdDHH { get; set; }
-        public int IdTT { get; set; }
-        public Nullable<System.DateTime> NgayTT { get; set; }
-        public Nullable<double> Tongtien { get; set; }
         public int Sdt { get; set; }
-        public int ShippingID { get; set; }
+        public int idChiTietDonDatHang { get; set; }
     
+        public virtual SanPham SanPham { get; set; }
         public virtual DonDatHang DonDatHang { get; set; }
-        public virtual DonHangVanChuyen DonHangVanChuyen { get; set; }
-        public virtual ThanhToan ThanhToan { get; set; }
     }
 }

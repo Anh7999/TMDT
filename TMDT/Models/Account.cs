@@ -18,7 +18,6 @@ namespace TMDT.Models
         public Account()
         {
             this.DonDatHangs = new HashSet<DonDatHang>();
-            this.SanPhams = new HashSet<SanPham>();
         }
     
         public int Sdt { get; set; }
@@ -30,7 +29,5 @@ namespace TMDT.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonDatHang> DonDatHangs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SanPham> SanPhams { get; set; }
     }
 }
