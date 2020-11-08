@@ -31,31 +31,28 @@ namespace TMDT.Controllers
         {
             return View();
         }
-        public ActionResult Shop()
+        public ActionResult Shop( int id)
+        {
+            var sp  = from s in db.SanPhams where s.IdLoaiSP == id select s;
+            return View(sp);
+        }
+        public ActionResult Product(int id)
         {
 
-            return View();
+            var sp = from s in db.SanPhams
+                       where s.IdSP == id
+                       select s;
+            return View(sp.Single());
         }
-        public ActionResult Product()
-        {
-
-            return View();
-        }
-        public ActionResult Product1(long id)
-        {
-            var v = from t in db.SanPhams
-                    where t.IdLoaiSP == id && t.Hie == true
-                    orderby t.Order ascending
-                    select t;
-            return PartialView(v.ToList());
-        }
+       
         public ActionResult Checkout()
         {
             return View();
         }
         public ActionResult Shopbycategory()
         {
-            return View();
+            var category = from cd in db.LoaiSanPhams select cd;
+            return PartialView(category);
         }
         public ActionResult Cart()
         {

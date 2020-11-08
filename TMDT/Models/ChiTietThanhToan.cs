@@ -14,14 +14,13 @@ namespace TMDT.Models
     
     public partial class ChiTietThanhToan
     {
-        public int IdDHH { get; set; }
+        public int IdDDH { get; set; }
         public int IdTT { get; set; }
         public Nullable<System.DateTime> NgayTT { get; set; }
         public Nullable<double> Tongtien { get; set; }
-        public int Sdt { get; set; }
-        public int ShippingID { get; set; }
+        public Nullable<int> Sdt { get; set; }
+        public Nullable<int> ShippingID { get; set; }
     
-        public virtual DonDatHang DonDatHang { get; set; }
         public virtual DonHangVanChuyen DonHangVanChuyen { get; set; }
         public virtual ThanhToan ThanhToan { get; set; }
     }

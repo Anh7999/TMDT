@@ -20,12 +20,15 @@ namespace TMDT.Models
             this.DonDatHangs = new HashSet<DonDatHang>();
         }
     
-        public int Sdt { get; set; }
+        public int MaKH { get; set; }
         public string TenKH { get; set; }
-        public string DiachiKH { get; set; }
-        public Nullable<System.DateTime> Ngaydangki { get; set; }
+        public string TaiKhoan { get; set; }
         public string Matkhau { get; set; }
-        public Nullable<int> Level { get; set; }
+        public string Email { get; set; }
+        public string DiachiKH { get; set; }
+        public string Sdt { get; set; }
+        public Nullable<System.DateTime> Ngaydangki { get; set; }
+        public Nullable<int> Level1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonDatHang> DonDatHangs { get; set; }

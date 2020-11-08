@@ -1,63 +1,15 @@
-﻿
-@{
-    Layout = null;
-}
-
+﻿@model IEnumerable<TMDT.Models.LoaiSanPham>
 <div class="col-xl-3 col-lg-4 d-none d-lg-block">
     <div class="vertical-menu mb-all-30">
         <nav>
             <ul class="vertical-menu-list">
-                <li class="">
-                    <a href="@Url.Action("Shop","Default")"><span class="fas fa-tshirt "></span>Quần Áo Nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-
-                    <ul class="ht-dropdown mega-child">
-                        <li><a href="@Url.Action("Shop","Default")">Áo sơ mi nam </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Áo thun nam </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Quần tây nam</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Quần jeans nam</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Quần thun nam</a></li>
-                    </ul>
-                    <!-- category submenu end-->
-                </li>
-                <li>
-                    <a href="@Url.Action("Shop","Default")"><span></span>Quần Áo Nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-
-                    <ul class="ht-dropdown mega-child">
-                        <li><a href="@Url.Action("Shop","Default")">Áo thun nữ </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Áo thun nữ </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Quần jeans nữ</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Đầm</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Váy </a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="@Url.Action("Shop","Default")"><span></span>Giày dép nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-
-                    <ul class="ht-dropdown mega-child">
-                        <li><a href="@Url.Action("Shop","Default")">Dép quai ngang nam </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Xăng đan nam </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Dép xỏ ngón nam</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">giày sneakr nam</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">giày lười nam</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="@Url.Action("Shop","Default")"><span></span>Giày dép nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-
-                    <ul class="ht-dropdown mega-child">
-                        <li><a href="@Url.Action("Shop","Default")">Dép quai ngang nữ </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Xăng đan đế bằng </a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Dép xỏ ngón nữ</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">giày sneakr nữ</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">giày cao gót</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">giày búp bê</a></li>
-                        <li><a href="@Url.Action("Shop","Default")">Xăng đan cao gót</a></li>
-                    </ul>
-                </li>
-
-
-
-                <!-- More Categoies End -->
+                @foreach (var item in Model)
+                {
+                    <li >
+                        <a href="@Url.Action("Shop", "Default", new {id = item.IdLoaiSP})"><span class="fas fa-tshirt "></span>@item.TenLoaiSP<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                }
+                    
             </ul>
         </nav>
     </div>

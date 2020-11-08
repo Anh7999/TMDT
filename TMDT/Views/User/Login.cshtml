@@ -4,7 +4,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
+<div class="main-page-banner home-3">
+    <div class="container">
+        <div class="row">
+            <!-- Vertical Menu Start Here -->
+            @{ Html.RenderAction("Shopbycategory", "Default");}
+            <!-- Vertical Menu End Here -->
+        </div>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
 <!-- Categorie Menu & Slider Area End Here -->
 <!-- Breadcrumb Start -->
 <div class="breadcrumb-area mt-30">
@@ -25,6 +35,7 @@
     <div class="container">
         <div class="row">
             <!-- New Customer Start -->
+          
             <div class="col-md-6">
                 <div class="well mb-sm-30">
                     <div class="new-customer">
@@ -37,24 +48,31 @@
             </div>
             <!-- New Customer End -->
             <!-- Returning Customer Start -->
+          
             <div class="col-md-6">
                 <div class="well">
                     <div class="return-customer">
                         <h3 class="mb-10 custom-title">Đăng Nhập</h3>
-                       
-                        <form action="#">
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="text" name="email" placeholder="Email của bạn..." id="input-email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>Mật Khẩu</label>
-                                <input type="text" name="pass" placeholder="Nhập mật khẩu" id="input-password" class="form-control">
-                            </div>
-                            <p class="lost-password"><a href="@Url.Action("ForgotPass","User")">Quên mật khẩu?</a></p>
-                            <input type="submit" value="Đang nhập" class="return-customer-btn">
-                        </form>
-                    </div>
+                        <h4 style="color:red; text-align:center"> @ViewBag.Thongbao</h4>
+                        @using (Html.BeginForm())
+                        {
+                            <form action="#">
+                                <div class="form-group">
+                                    <label>Tên Tài Khoản</label>
+
+                                    <input type="text" name="TenDN" placeholder="Email của bạn..." id="TenDN" class="form-control">
+                                    @ViewData["Loi1"]
+                                </div>
+                                <div class="form-group">
+                                    <label>Mật Khẩu</label>
+                                    <input type="text" name="Matkhau" placeholder="Nhập mật khẩu" id="Matkhau" class="form-control">
+                                    @ViewData["Loi2"]
+                                </div>
+                                <p class="lost-password"><a href="@Url.Action("ForgotPass","User")">Quên mật khẩu?</a></p>
+                                <input type="submit" value="Đăng nhập" class="return-customer-btn">
+                            </form>
+                            }
+                        </div>
                 </div>
             </div>
             <!-- Returning Customer End -->

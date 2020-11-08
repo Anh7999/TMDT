@@ -4,12 +4,15 @@
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="TMDTDAModel.Account">
         <MappingFragment StoreEntitySet="Account">
-          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="TenKH" ColumnName="TenKH" />
-          <ScalarProperty Name="DiachiKH" ColumnName="DiachiKH" />
-          <ScalarProperty Name="Ngaydangki" ColumnName="Ngaydangki" />
+          <ScalarProperty Name="TaiKhoan" ColumnName="TaiKhoan" />
           <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
-          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiachiKH" ColumnName="DiachiKH" />
+          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="Ngaydangki" ColumnName="Ngaydangki" />
+          <ScalarProperty Name="Level1" ColumnName="Level1" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -17,18 +20,33 @@
       <EntityTypeMapping TypeName="TMDTDAModel.CHITIETDONDATHANG">
         <MappingFragment StoreEntitySet="CHITIETDONDATHANG">
           <ScalarProperty Name="IdSP" ColumnName="IdSP" />
-          <ScalarProperty Name="IdDHH" ColumnName="IdDHH" />
+          <ScalarProperty Name="IdDDH" ColumnName="IdDDH" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="Dongia" ColumnName="Dongia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietThanhToans">
+      <EntityTypeMapping TypeName="TMDTDAModel.ChiTietThanhToan">
+        <MappingFragment StoreEntitySet="ChiTietThanhToan">
+          <ScalarProperty Name="IdDDH" ColumnName="IdDDH" />
+          <ScalarProperty Name="IdTT" ColumnName="IdTT" />
+          <ScalarProperty Name="NgayTT" ColumnName="NgayTT" />
+          <ScalarProperty Name="Tongtien" ColumnName="Tongtien" />
           <ScalarProperty Name="Sdt" ColumnName="Sdt" />
-          <ScalarProperty Name="idChiTietDonDatHang" ColumnName="idChiTietDonDatHang" />
+          <ScalarProperty Name="ShippingID" ColumnName="ShippingID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DonDatHangs">
       <EntityTypeMapping TypeName="TMDTDAModel.DonDatHang">
         <MappingFragment StoreEntitySet="DonDatHang">
-          <ScalarProperty Name="IdDHH" ColumnName="IdDHH" />
-          <ScalarProperty Name="NgayDH" ColumnName="NgayDH" />
-          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="IdDDH" ColumnName="IdDDH" />
+          <ScalarProperty Name="Dathanhtoan" ColumnName="Dathanhtoan" />
+          <ScalarProperty Name="Tinhtranggiaohang" ColumnName="Tinhtranggiaohang" />
+          <ScalarProperty Name="Ngaydat" ColumnName="Ngaydat" />
+          <ScalarProperty Name="Ngaygiao" ColumnName="Ngaygiao" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -60,8 +78,8 @@
         <MappingFragment StoreEntitySet="LoaiSanPham">
           <ScalarProperty Name="IdLoaiSP" ColumnName="IdLoaiSP" />
           <ScalarProperty Name="TenLoaiSP" ColumnName="TenLoaiSP" />
-          <ScalarProperty Name="Hide" ColumnName="Hide" />
-          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -70,6 +88,8 @@
         <MappingFragment StoreEntitySet="NhaCungCap">
           <ScalarProperty Name="IdNCC" ColumnName="IdNCC" />
           <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -78,14 +98,28 @@
         <MappingFragment StoreEntitySet="SanPham">
           <ScalarProperty Name="IdSP" ColumnName="IdSP" />
           <ScalarProperty Name="TenSP" ColumnName="TenSP" />
-          <ScalarProperty Name="MotaSP" ColumnName="MotaSP" />
           <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="MotaSP" ColumnName="MotaSP" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Ngaycapnhat" ColumnName="Ngaycapnhat" />
+          <ScalarProperty Name="Soluongton" ColumnName="Soluongton" />
           <ScalarProperty Name="IdNCC" ColumnName="IdNCC" />
           <ScalarProperty Name="IdLoaiSP" ColumnName="IdLoaiSP" />
           <ScalarProperty Name="IdKM" ColumnName="IdKM" />
-          <ScalarProperty Name="Image" ColumnName="Image" />
-          <ScalarProperty Name="Order" ColumnName="Order" />
-          <ScalarProperty Name="Hie" ColumnName="Hie" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="order" ColumnName="order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TMDTDAModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -94,18 +128,6 @@
         <MappingFragment StoreEntitySet="ThanhToan">
           <ScalarProperty Name="IdTT" ColumnName="IdTT" />
           <ScalarProperty Name="HinhthucTT" ColumnName="HinhthucTT" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ChiTietThanhToans">
-      <EntityTypeMapping TypeName="TMDTDAModel.ChiTietThanhToan">
-        <MappingFragment StoreEntitySet="ChiTietThanhToan">
-          <ScalarProperty Name="IdDHH" ColumnName="IdDHH" />
-          <ScalarProperty Name="IdTT" ColumnName="IdTT" />
-          <ScalarProperty Name="NgayTT" ColumnName="NgayTT" />
-          <ScalarProperty Name="Tongtien" ColumnName="Tongtien" />
-          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
-          <ScalarProperty Name="ShippingID" ColumnName="ShippingID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

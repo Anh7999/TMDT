@@ -22,14 +22,17 @@ namespace TMDT.Models
     
         public int IdSP { get; set; }
         public string TenSP { get; set; }
+        public Nullable<decimal> DonGia { get; set; }
         public string MotaSP { get; set; }
-        public Nullable<int> DonGia { get; set; }
-        public int IdNCC { get; set; }
-        public int IdLoaiSP { get; set; }
-        public int IdKM { get; set; }
-        public string Image { get; set; }
-        public Nullable<int> Order { get; set; }
-        public Nullable<bool> Hie { get; set; }
+        public string Images { get; set; }
+        public Nullable<System.DateTime> Ngaycapnhat { get; set; }
+        public Nullable<int> Soluongton { get; set; }
+        public Nullable<int> IdNCC { get; set; }
+        public Nullable<int> IdLoaiSP { get; set; }
+        public Nullable<int> IdKM { get; set; }
+        public string meta { get; set; }
+        public Nullable<bool> hide { get; set; }
+        public Nullable<int> order { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETDONDATHANG> CHITIETDONDATHANGs { get; set; }

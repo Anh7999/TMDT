@@ -26,12 +26,10 @@ namespace TMDT.Models
         }
     
         public virtual DbSet<Account> Accounts { get; set; }
-        public virtual DbSet<ChiTietGioHang> ChiTietGioHangs { get; set; }
+        public virtual DbSet<CHITIETDONDATHANG> CHITIETDONDATHANGs { get; set; }
         public virtual DbSet<ChiTietThanhToan> ChiTietThanhToans { get; set; }
         public virtual DbSet<DonDatHang> DonDatHangs { get; set; }
         public virtual DbSet<DonHangVanChuyen> DonHangVanChuyens { get; set; }
-        public virtual DbSet<Gia> Gias { get; set; }
-        public virtual DbSet<GioHang> GioHangs { get; set; }
         public virtual DbSet<KhuyenMai> KhuyenMais { get; set; }
         public virtual DbSet<LoaiSanPham> LoaiSanPhams { get; set; }
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }

@@ -51,12 +51,94 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.0\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.3.1.9\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.9\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.9\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.9\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.9\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.1.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -131,56 +213,59 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CHITIETDONDATHANG.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ChiTietThanhToan.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonDatHang.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonHangVanChuyen.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Giohang.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\KhuyenMai.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoaiSanPham.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NhaCungCap.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SanPham.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ThanhToan.cs">
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TMDTDB.Context.cs">
+    <Compile Include="Models\TMDT.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TMDTDB.Context.tt</DependentUpon>
+      <DependentUpon>TMDT.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TMDTDB.cs">
+    <Compile Include="Models\TMDT.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TMDTDB.tt</DependentUpon>
+      <DependentUpon>TMDT.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TMDTDB.Designer.cs">
+    <Compile Include="Models\TMDT.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TMDTDB.edmx</DependentUpon>
+      <DependentUpon>TMDT.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -3361,6 +3446,125 @@
     <Content Include="Areas\Admin\Conntent\vendor\jquery\jquery.min.js" />
     <Content Include="Areas\Admin\Conntent\vendor\jquery\jquery.slim.js" />
     <Content Include="Areas\Admin\Conntent\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Content\anh\1.jpg" />
+    <Content Include="Content\anh\10.jpg" />
+    <Content Include="Content\anh\100.jpg" />
+    <Content Include="Content\anh\101.jpg" />
+    <Content Include="Content\anh\102.gif" />
+    <Content Include="Content\anh\103.jpg" />
+    <Content Include="Content\anh\104.jpg" />
+    <Content Include="Content\anh\105.jpg" />
+    <Content Include="Content\anh\106.jpg" />
+    <Content Include="Content\anh\107.gif" />
+    <Content Include="Content\anh\108.gif" />
+    <Content Include="Content\anh\109.jpg" />
+    <Content Include="Content\anh\11.jpg" />
+    <Content Include="Content\anh\110.gif" />
+    <Content Include="Content\anh\111.jpg" />
+    <Content Include="Content\anh\112.gif" />
+    <Content Include="Content\anh\113.jpg" />
+    <Content Include="Content\anh\114.jpg" />
+    <Content Include="Content\anh\115.jpg" />
+    <Content Include="Content\anh\116.jpg" />
+    <Content Include="Content\anh\117.jpg" />
+    <Content Include="Content\anh\118.jpg" />
+    <Content Include="Content\anh\119.jpg" />
+    <Content Include="Content\anh\12.jpg" />
+    <Content Include="Content\anh\120.jpg" />
+    <Content Include="Content\anh\13.jpg" />
+    <Content Include="Content\anh\14.jpg" />
+    <Content Include="Content\anh\15.jpg" />
+    <Content Include="Content\anh\16.jpg" />
+    <Content Include="Content\anh\17.jpg" />
+    <Content Include="Content\anh\18.jpg" />
+    <Content Include="Content\anh\19.jpg" />
+    <Content Include="Content\anh\2.jpg" />
+    <Content Include="Content\anh\20.jpg" />
+    <Content Include="Content\anh\21.jpg" />
+    <Content Include="Content\anh\22.jpg" />
+    <Content Include="Content\anh\23.jpg" />
+    <Content Include="Content\anh\24.jpg" />
+    <Content Include="Content\anh\25.jpg" />
+    <Content Include="Content\anh\26.jpg" />
+    <Content Include="Content\anh\27.jpg" />
+    <Content Include="Content\anh\28.jpg" />
+    <Content Include="Content\anh\29.jpg" />
+    <Content Include="Content\anh\3.jpg" />
+    <Content Include="Content\anh\30.jpg" />
+    <Content Include="Content\anh\31.jpg" />
+    <Content Include="Content\anh\32.jpg" />
+    <Content Include="Content\anh\33.jpg" />
+    <Content Include="Content\anh\34.jpg" />
+    <Content Include="Content\anh\35.jpg" />
+    <Content Include="Content\anh\36.jpg" />
+    <Content Include="Content\anh\37.jpg" />
+    <Content Include="Content\anh\38.jpg" />
+    <Content Include="Content\anh\39.jpg" />
+    <Content Include="Content\anh\4.jpg" />
+    <Content Include="Content\anh\40.jpg" />
+    <Content Include="Content\anh\41.jpg" />
+    <Content Include="Content\anh\42.jpg" />
+    <Content Include="Content\anh\43.jpg" />
+    <Content Include="Content\anh\44.jpg" />
+    <Content Include="Content\anh\45.jpg" />
+    <Content Include="Content\anh\46.jpg" />
+    <Content Include="Content\anh\47.jpg" />
+    <Content Include="Content\anh\48.jpg" />
+    <Content Include="Content\anh\49.jpg" />
+    <Content Include="Content\anh\5.jpg" />
+    <Content Include="Content\anh\51.jpg" />
+    <Content Include="Content\anh\52.jpg" />
+    <Content Include="Content\anh\53.jpg" />
+    <Content Include="Content\anh\54.jpg" />
+    <Content Include="Content\anh\55.jpg" />
+    <Content Include="Content\anh\56.jpg" />
+    <Content Include="Content\anh\57.jpg" />
+    <Content Include="Content\anh\58.jpg" />
+    <Content Include="Content\anh\59.jpg" />
+    <Content Include="Content\anh\6.jpg" />
+    <Content Include="Content\anh\60.jpg" />
+    <Content Include="Content\anh\61.jpg" />
+    <Content Include="Content\anh\62.jpg" />
+    <Content Include="Content\anh\63.jpg" />
+    <Content Include="Content\anh\64.jpg" />
+    <Content Include="Content\anh\65.jpg" />
+    <Content Include="Content\anh\66.jpg" />
+    <Content Include="Content\anh\67.jpg" />
+    <Content Include="Content\anh\68.jpg" />
+    <Content Include="Content\anh\69.jpg" />
+    <Content Include="Content\anh\7.jpg" />
+    <Content Include="Content\anh\70.jpg" />
+    <Content Include="Content\anh\71.jpg" />
+    <Content Include="Content\anh\72.jpg" />
+    <Content Include="Content\anh\73.jpg" />
+    <Content Include="Content\anh\74.jpg" />
+    <Content Include="Content\anh\75.gif" />
+    <Content Include="Content\anh\76.jpg" />
+    <Content Include="Content\anh\77.jpg" />
+    <Content Include="Content\anh\78.jpg" />
+    <Content Include="Content\anh\79.png" />
+    <Content Include="Content\anh\8.jpg" />
+    <Content Include="Content\anh\80.jpg" />
+    <Content Include="Content\anh\81.jpg" />
+    <Content Include="Content\anh\82.jpg" />
+    <Content Include="Content\anh\83.jpg" />
+    <Content Include="Content\anh\84.jpg" />
+    <Content Include="Content\anh\85.jpg" />
+    <Content Include="Content\anh\86.jpg" />
+    <Content Include="Content\anh\87.jpg" />
+    <Content Include="Content\anh\88.jpg" />
+    <Content Include="Content\anh\89.jpg" />
+    <Content Include="Content\anh\9.jpg" />
+    <Content Include="Content\anh\90.jpg" />
+    <Content Include="Content\anh\91.jpg" />
+    <Content Include="Content\anh\92.jpg" />
+    <Content Include="Content\anh\93.jpg" />
+    <Content Include="Content\anh\94.jpg" />
+    <Content Include="Content\anh\95.jpg" />
+    <Content Include="Content\anh\96.jpg" />
+    <Content Include="Content\anh\97.jpg" />
+    <Content Include="Content\anh\98.jpg" />
+    <Content Include="Content\anh\99.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -3509,15 +3713,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\TMDTDB.Context.tt">
+    <Content Include="Models\TMDT.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TMDTDB.edmx</DependentUpon>
-      <LastGenOutput>TMDTDB.Context.cs</LastGenOutput>
+      <DependentUpon>TMDT.edmx</DependentUpon>
+      <LastGenOutput>TMDT.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TMDTDB.tt">
+    <Content Include="Models\TMDT.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TMDTDB.edmx</DependentUpon>
-      <LastGenOutput>TMDTDB.cs</LastGenOutput>
+      <DependentUpon>TMDT.edmx</DependentUpon>
+      <LastGenOutput>TMDT.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -3757,12 +3961,12 @@
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="Areas\Admin\Conntent\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
-    <EntityDeploy Include="Models\TMDTDB.edmx">
+    <EntityDeploy Include="Models\TMDT.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TMDTDB.Designer.cs</LastGenOutput>
+      <LastGenOutput>TMDT.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\TMDTDB.edmx.diagram">
-      <DependentUpon>TMDTDB.edmx</DependentUpon>
+    <Content Include="Models\TMDT.edmx.diagram">
+      <DependentUpon>TMDT.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -3803,9 +4007,11 @@
     <Content Include="Views\User\ForgotPass.cshtml" />
     <Content Include="Views\Default\Compare.cshtml" />
     <Content Include="Views\Default\Wishlish.cshtml" />
-    <Content Include="Views\Default\Product1.cshtml" />
-    <Content Include="Views\Product\Product1.cshtml" />
     <Content Include="Views\Default\Shopbycategory.cshtml" />
+    <Content Include="Views\GioHang\GioHang.cshtml" />
+    <Content Include="Views\GioHang\GiohangPartial.cshtml" />
+    <Content Include="Views\GioHang\DatHang.cshtml" />
+    <Content Include="Views\GioHang\Xacnhandonhang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

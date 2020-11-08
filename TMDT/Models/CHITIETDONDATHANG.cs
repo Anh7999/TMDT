@@ -15,11 +15,11 @@ namespace TMDT.Models
     public partial class CHITIETDONDATHANG
     {
         public int IdSP { get; set; }
-        public int IdDHH { get; set; }
-        public int Sdt { get; set; }
-        public int idChiTietDonDatHang { get; set; }
+        public int IdDDH { get; set; }
+        public Nullable<int> Soluong { get; set; }
+        public Nullable<decimal> Dongia { get; set; }
     
-        public virtual SanPham SanPham { get; set; }
         public virtual DonDatHang DonDatHang { get; set; }
+        public virtual SanPham SanPham { get; set; }
     }
 }

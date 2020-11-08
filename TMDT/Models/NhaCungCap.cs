@@ -22,6 +22,8 @@ namespace TMDT.Models
     
         public int IdNCC { get; set; }
         public string TenNCC { get; set; }
+        public string Diachi { get; set; }
+        public string DienThoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SanPham> SanPhams { get; set; }
