@@ -54,6 +54,11 @@ namespace TMDT.Controllers
             var category = from cd in db.LoaiSanPhams select cd;
             return PartialView(category);
         }
+        public ActionResult getSanPham()
+        {
+            var sp = from cd in db.SanPhams  select cd;
+            return PartialView(sp);
+        }
         public ActionResult Cart()
         {
             return View();

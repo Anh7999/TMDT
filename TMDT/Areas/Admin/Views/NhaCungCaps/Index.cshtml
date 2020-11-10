@@ -5,25 +5,21 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
-<style>
-    th, td {
-        text-align: center;
-    }
+<h2>Quản lý nhà cung cấp</h2>
 
-        td p {
-            height: 50px;
-            overflow-y: hidden;
-            text-overflow: ellipsis;
-        }
-</style>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.TenNCC)
+            Tên nhà cung cấp
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Số điện thoại
         </th>
         <th></th>
     </tr>
@@ -32,6 +28,12 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.TenNCC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Diachi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DienThoai)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.IdNCC }) |

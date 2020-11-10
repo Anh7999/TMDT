@@ -20,6 +20,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.DonGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.MotaSP)
         </dt>
 
@@ -28,19 +36,51 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Account.TenKH)
+            @Html.DisplayNameFor(model => model.Images)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Account.TenKH)
+            @Html.DisplayFor(model => model.Images)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Gia.IdMucgia)
+            @Html.DisplayNameFor(model => model.Ngaycapnhat)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Gia.IdMucgia)
+            @Html.DisplayFor(model => model.Ngaycapnhat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soluongton)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluongton)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.meta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.meta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hide)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.order)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.order)
         </dd>
 
         <dt>
@@ -70,6 +110,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdSP }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

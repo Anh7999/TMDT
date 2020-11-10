@@ -17,7 +17,7 @@ namespace TMDT.Areas.Admin.Controllers
         // GET: Admin/SanPhams
         public ActionResult Index()
         {
-            var sanPhams = db.SanPhams.Include(s => s.Account).Include(s => s.Gia).Include(s => s.KhuyenMai).Include(s => s.LoaiSanPham).Include(s => s.NhaCungCap);
+            var sanPhams = db.SanPhams.Include(s => s.KhuyenMai).Include(s => s.LoaiSanPham).Include(s => s.NhaCungCap);
             return View(sanPhams.ToList());
         }
 
@@ -39,8 +39,6 @@ namespace TMDT.Areas.Admin.Controllers
         // GET: Admin/SanPhams/Create
         public ActionResult Create()
         {
-            ViewBag.Sdt = new SelectList(db.Accounts, "Sdt", "TenKH");
-            ViewBag.IdMucgia = new SelectList(db.Gias, "IdMucgia", "IdMucgia");
             ViewBag.IdKM = new SelectList(db.KhuyenMais, "IdKM", "Mota");
             ViewBag.IdLoaiSP = new SelectList(db.LoaiSanPhams, "IdLoaiSP", "TenLoaiSP");
             ViewBag.IdNCC = new SelectList(db.NhaCungCaps, "IdNCC", "TenNCC");
@@ -52,7 +50,7 @@ namespace TMDT.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IdSP,TenSP,MotaSP,IdNCC,IdLoaiSP,IdMucgia,IdKM,Sdt")] SanPham sanPham)
+        public ActionResult Create([Bind(Include = "IdSP,TenSP,DonGia,MotaSP,Images,Ngaycapnhat,Soluongton,IdNCC,IdLoaiSP,IdKM,meta,hide,order")] SanPham sanPham)
         {
             if (ModelState.IsValid)
             {
@@ -61,8 +59,6 @@ namespace TMDT.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Sdt = new SelectList(db.Accounts, "Sdt", "TenKH", sanPham.Sdt);
-            ViewBag.IdMucgia = new SelectList(db.Gias, "IdMucgia", "IdMucgia", sanPham.IdMucgia);
             ViewBag.IdKM = new SelectList(db.KhuyenMais, "IdKM", "Mota", sanPham.IdKM);
             ViewBag.IdLoaiSP = new SelectList(db.LoaiSanPhams, "IdLoaiSP", "TenLoaiSP", sanPham.IdLoaiSP);
             ViewBag.IdNCC = new SelectList(db.NhaCungCaps, "IdNCC", "TenNCC", sanPham.IdNCC);
@@ -81,8 +77,6 @@ namespace TMDT.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.Sdt = new SelectList(db.Accounts, "Sdt", "TenKH", sanPham.Sdt);
-            ViewBag.IdMucgia = new SelectList(db.Gias, "IdMucgia", "IdMucgia", sanPham.IdMucgia);
             ViewBag.IdKM = new SelectList(db.KhuyenMais, "IdKM", "Mota", sanPham.IdKM);
             ViewBag.IdLoaiSP = new SelectList(db.LoaiSanPhams, "IdLoaiSP", "TenLoaiSP", sanPham.IdLoaiSP);
             ViewBag.IdNCC = new SelectList(db.NhaCungCaps, "IdNCC", "TenNCC", sanPham.IdNCC);
@@ -94,7 +88,7 @@ namespace TMDT.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IdSP,TenSP,MotaSP,IdNCC,IdLoaiSP,IdMucgia,IdKM,Sdt")] SanPham sanPham)
+        public ActionResult Edit([Bind(Include = "IdSP,TenSP,DonGia,MotaSP,Images,Ngaycapnhat,Soluongton,IdNCC,IdLoaiSP,IdKM,meta,hide,order")] SanPham sanPham)
         {
             if (ModelState.IsValid)
             {
@@ -102,8 +96,6 @@ namespace TMDT.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.Sdt = new SelectList(db.Accounts, "Sdt", "TenKH", sanPham.Sdt);
-            ViewBag.IdMucgia = new SelectList(db.Gias, "IdMucgia", "IdMucgia", sanPham.IdMucgia);
             ViewBag.IdKM = new SelectList(db.KhuyenMais, "IdKM", "Mota", sanPham.IdKM);
             ViewBag.IdLoaiSP = new SelectList(db.LoaiSanPhams, "IdLoaiSP", "TenLoaiSP", sanPham.IdLoaiSP);
             ViewBag.IdNCC = new SelectList(db.NhaCungCaps, "IdNCC", "TenNCC", sanPham.IdNCC);

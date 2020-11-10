@@ -46,7 +46,7 @@ namespace TMDT.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IdNCC,TenNCC")] NhaCungCap nhaCungCap)
+        public ActionResult Create([Bind(Include = "IdNCC,TenNCC,Diachi,DienThoai")] NhaCungCap nhaCungCap)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace TMDT.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IdNCC,TenNCC")] NhaCungCap nhaCungCap)
+        public ActionResult Edit([Bind(Include = "IdNCC,TenNCC,Diachi,DienThoai")] NhaCungCap nhaCungCap)
         {
             if (ModelState.IsValid)
             {

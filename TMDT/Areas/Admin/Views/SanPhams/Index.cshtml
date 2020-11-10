@@ -4,18 +4,8 @@
     ViewBag.Title = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
-<style>
-    th, td {
-        text-align: center;
-    }
 
-        td p {
-            height: 50px;
-            overflow-y: hidden;
-            text-overflow: ellipsis;
-        }
-</style>
-<h2>Index</h2>
+<h2>Quản lý sản phẩm</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -23,25 +13,22 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.TenSP)
+            Tên sản phẩm
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MotaSP)
+            Đơn giá
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Account.TenKH)
+            Mô tả
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Gia.IdMucgia)
+            Hình ảnh
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.KhuyenMai.Mota)
+            Số lượng tồn
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.LoaiSanPham.TenLoaiSP)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NhaCungCap.TenNCC)
+            Khuyến mãi
         </th>
         <th></th>
     </tr>
@@ -52,27 +39,24 @@
             @Html.DisplayFor(modelItem => item.TenSP)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.DonGia)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.MotaSP)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Account.TenKH)
+            @Html.DisplayFor(modelItem => item.Images)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Gia.IdMucgia)
+            @Html.DisplayFor(modelItem => item.Soluongton)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.KhuyenMai.Mota)
+            @Html.DisplayFor(modelItem => item.KhuyenMai.MucKM)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.LoaiSanPham.TenLoaiSP)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NhaCungCap.TenNCC)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdSP }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdSP }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdSP })
         </td>
     </tr>
 }

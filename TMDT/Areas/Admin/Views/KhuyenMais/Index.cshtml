@@ -5,43 +5,27 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
-<style>
-    th, td {
-        text-align: center;
-    }
+<h2>Quản lý khuyến mãi</h2>
 
-        td p {
-            height: 50px;
-            overflow-y: hidden;
-            text-overflow: ellipsis;
-        }
-</style>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Mota)
+            Mức khuyến mãi
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MucKM)
+            Ngày bắt đầu
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NgayBD)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NgayKT)
+            Ngày kết thúc
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Mota)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.MucKM)
         </td>

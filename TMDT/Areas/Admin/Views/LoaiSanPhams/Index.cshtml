@@ -5,25 +5,18 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
-<style>
-    th, td {
-        text-align: center;
-    }
+<h2>Quản lý loại sản phẩm</h2>
 
-        td p {
-            height: 50px;
-            overflow-y: hidden;
-            text-overflow: ellipsis;
-        }
-</style>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.TenLoaiSP)
+            Tên loại sản phẩm
+        </th>
+        <th>
+            Hiển thị
         </th>
         <th></th>
     </tr>
@@ -32,6 +25,9 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.TenLoaiSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hide)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.IdLoaiSP }) |
