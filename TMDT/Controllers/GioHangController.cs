@@ -80,16 +80,16 @@ namespace TMDT.Controllers
             ViewBag.Tongtien = TongTien();
             return PartialView();
         }
- 
+
         //Cap nhat Giỏ hàng
         public ActionResult CapnhatGiohang(int iMaSP, FormCollection f)
         {
 
-            
+            //Lay gio hang tu Session
             List<Giohang> lstGiohang = Laygiohang();
-          
+            //Kiem tra sach da co trong Session["Giohang"]
             Giohang sanpham = lstGiohang.SingleOrDefault(n => n.idsp == iMaSP);
-            
+            //Neu ton tai thi cho sua Soluong
             if (sanpham != null)
             {
                 sanpham.soluong = int.Parse(f["txtSoluong"].ToString());

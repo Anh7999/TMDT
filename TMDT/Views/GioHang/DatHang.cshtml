@@ -52,7 +52,7 @@
                         @{
                             Account kh = (Account)Session["Taikhoan"];
                         }
-                        <table >
+                        <table>
                             @using (Html.BeginForm())
                             {
                                 @Html.ValidationSummary(true)
@@ -73,24 +73,27 @@
                                     <td> Ngày đặt:</td>
                                     <td style="font-weight:bold"> @DateTime.Now.ToShortDateString() </td>
                                 </tr>
-                                <tr style="height:40px">
+                                <tr style="height:80px">
                                     <td> Ngày giao hàng:</td>
-                                    <td style="font-weight:bold">
-                                        <input type="date" name="Ngaygiao" />
+                                    <td>
+                                        <input style="width:160px" type="date" name="Ngaygiao" />
                                     </td>
                                 </tr>
 
                                 <tr style="height:40px ">
                                     <td></td>
-                                    <td >
-                                        <input type="Submit" c value="ĐỒNG Ý ĐẶT HÀNG" />
+                                    <td>
+                                        <input style="width:160px" type="Submit" value="ĐỒNG Ý ĐẶT HÀNG" />
                                     </td>
                                 </tr>
                             }
+
                         </table>
                     </div>
+                    <div class="wc-proceed-to-checkout">
+                        @Html.ActionLink(" Thanh Toán PayPal", "PaymentWithPaypal", "PaypalController")
+                    </div>
                     <!-- Table Content Start -->
-                   
                     <!-- Row End -->
                 </form>
                 <!-- Form End -->

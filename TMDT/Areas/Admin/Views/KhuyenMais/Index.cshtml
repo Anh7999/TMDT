@@ -10,37 +10,43 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            Mức khuyến mãi
-        </th>
-        <th>
-            Ngày bắt đầu
-        </th>
-        <th>
-            Ngày kết thúc
-        </th>
-        <th></th>
-    </tr>
+<div class="container">
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    Mức khuyến mãi
+                </th>
+                <th>
+                    Ngày bắt đầu
+                </th>
+                <th>
+                    Ngày kết thúc
+                </th>
+                <th></th>
+            </tr>
+            </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MucKM)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayBD)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayKT)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.IdKM }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.IdKM }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.IdKM })
+                    </td>
+                </tr>
+            }
+        </tbody>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.MucKM)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayBD)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayKT)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdKM }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdKM }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdKM })
-        </td>
-    </tr>
-}
-
-</table>
+    </table>
+    </div>

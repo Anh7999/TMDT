@@ -30,42 +30,49 @@
                         <table>
                             <thead>
                                 <tr>
+                                    <th class="product-thumbnail">Mã SP</th>
+                                    <th class="product-name"> Tên Sản Phẩm</th>
                                     <th class="product-thumbnail">Hình</th>
-                                    <th class="product-name">Sản Phẩm</th>
-                                    <th class="product-price">Giá</th>
+
+
                                     <th class="product-quantity">Số Lượng</th>
+                                    <th class="product-price">Giá</th>
                                     <th class="product-subtotal">Tổng Tiền</th>
-                                    <th class="product-remove">Xóa</th>
+                                    <th class="product-subtotal">Chi tiết</th>
+
+                                    @*<th width="50px"> cập nhật</th>*@
+                                    <th width="50px">Xóa</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (var item in Model)
                                 {
                                 <tr>
-                                    @using (Html.BeginForm("CapnhatGiohang", "Giohang", new { @iMaSp = item.idsp }))
+                                    <td> @item.idsp </td>
+                                    <td class="product-name"><a href="#">@item.tensp</a></td>
+                                    <td class="product-thumbnail">
+                                        <a href="#"><img src="~/Content/anh/@item.anh" alt="cart-image"></a>
+                                    </td>
+                                    @using (Html.BeginForm("CapnhatGiohang", "GioHang", new { @iMaSp = item.idsp }))
                                     {
-                                        <td class="product-thumbnail">
-                <a href="#"><img src="~/Content/anh/@item.anh" alt="cart-image"></a>
-            </td>
-            <td class="product-name"><a href="#">@item.tensp</a></td>
 
-                <td class="product-price"><span class="amount">@String.Format("{0:0,0}", item.dongia)</span></td>
-                <td class="product-quantity"><input type="number" min="1" name="txtSoluong" value="@item.soluong"></td>
-                <td class="product-subtotal">@String.Format("{0:0,0}", item.thanhtien)</td>
-                <td class="product-remove">  @Html.ActionLink("X", "XoaGiohang", new { @iMaSp = item.idsp })</td>
-               
 
-                                        @*<td>
-                                            <input type="number" min="1" name="txtSoluong" value="@item.soluong" style="background-color:yellow" />
-                                        </td>
-                                        <td>@String.Format("{0:0,0}", item.dongia) </td>
-                                        <td>@String.Format("{0:0,0}", item.t) </td>
-                                        <td> <a href="@Url.Action("Details", "BookStore", new { id = item.iMasach})"> Chi tiết </a></td>
-                                        <td> @Html.ActionLink("Xóa", "XoaGiohang", new { @iMaSp = item.iMasach })</td>
-                                        <td> <input type="submit" value="Cập Nhật" /></td>*@
+                                        <td class="product-quantity"><input type="number" min="1" name="txtSoluong" value="@item.soluong"></td>
 
-                                    }
-                                </tr>
+                                        <td class="product-price"><span class="amount">@String.Format("{0:0,0}", item.dongia)</span></td>
+
+                                        <td class="product-subtotal">@String.Format("{0:0,0}", item.thanhtien)</td>
+                                        <td> <a href="@Url.Action("Product", "Default", new { id = item.idsp})"> Chi tiết </a></td>
+                                        @*<div class="col-md-8 col-sm-12">
+                                            <div class="buttons-cart">
+                                                <td class="product-remove"> <input type="submit" value="Cập Nhật" /></td>
+                                            </div>
+                                            </div>*@
+                                            <td class="product-remove">  @Html.ActionLink("X", "XoaGiohang", new { @iMaSp = item.idsp })</td>
+
+
+                                            }
+                                    </tr>
                                         
                                     }
                                
@@ -77,7 +84,7 @@
                         <!-- Cart Button Start -->
                         <div class="col-md-8 col-sm-12">
                             <div class="buttons-cart">
-                                <input type="submit" value="Cập Nhật Giỏ Hàng">
+                                @*<input type="submit" value="Cập Nhật Giỏ Hàng">*@
                                 @*<a href="#">Continue Shopping</a>*@
                                 @Html.ActionLink("Xóa Giỏ Hàng", "XoaTatcaGiohang")
 
@@ -98,7 +105,7 @@
                                         <tr class="order-total">
                                             <th>Tổng Tiền: </th>
                                             <td>
-                                                <strong><span class="amount">@String.Format("{0:0,0}", ViewBag.Tongtien) VNĐ</span></strong>
+                                                <strong><span class="amount">@String.Format("{0:0,0}", ViewBag.Tongtien) $USD</span></strong>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -106,6 +113,7 @@
                                 <div class="wc-proceed-to-checkout">
                                     @Html.ActionLink("ĐẶT HÀNG", "Dathang", "GioHang")
                                 </div>
+                                
                             </div>
                         </div>
                         <!-- Cart Totals End -->

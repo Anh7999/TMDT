@@ -11,7 +11,8 @@ namespace TMDT.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Account
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,7 +20,7 @@ namespace TMDT.Models
         {
             this.DonDatHangs = new HashSet<DonDatHang>();
         }
-    
+   
         public int MaKH { get; set; }
         public string TenKH { get; set; }
         public string TaiKhoan { get; set; }

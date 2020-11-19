@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PagedList;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -67,9 +68,24 @@ namespace TMDT.Controllers
         {
             return View();
         }
+
         public ActionResult Wishlish()
         {
             return View();
+        }
+        private List<SanPham> LaySpmoi()
+        {
+           
+
+            return db.SanPhams.OrderByDescending(a => a.Ngaycapnhat).Take(5).ToList();
+        }
+        public ActionResult SpMoi()
+        {
+
+            //var sachmoi = LaySpmoi(1);
+            //return View(sachmoi);
+            var lstsp = db.SanPhams.OrderByDescending(a => a.Ngaycapnhat).Take(4).ToList();
+            return PartialView(lstsp);
         }
     }
 }
